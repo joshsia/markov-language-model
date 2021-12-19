@@ -6,12 +6,11 @@ a corpus. The script takes the learned model, and an optional
 filename to save as.
 
 Usage:
-generate_text.py --in_model=<in_model> [--len=<len>] [--out_file=<out_file>]
+generate_text.py --in_model=<in_model> [--len=<len>]
 
 Options:
 --in_model=<in_model>       Filename of learned model
 --len=<len>                 Length of generated text [default: 200]
---out_file=<out_file>       Filename to save corpus as [default: corpus.txt]
 '''
 
 # python src/generate_text.py --in_model=results/corpus.pickle --len=200 --out_file=corpus
@@ -45,7 +44,7 @@ def main(opt):
         
         out_text += generated_char
     
-    out_file = "results/" + opt["--out_file"]
+    out_file = "results/synthetic_corpus.txt"
     with open(out_file, "w") as f:
         f.write(out_text)
 

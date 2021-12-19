@@ -2,8 +2,8 @@
 # Date: 2021-12-19
 
 '''This script fits a Markov language model a given corpus. The script
-takes a URL and an optional start argument specifying where the 
-text starts from.
+takes the path to a corpus and an optional n_gram argument specifying
+where the size of n-gram to use.
 
 Usage:
 fit_model.py --in_corpus=<in_corpus> [--n_gram=<n_gram>]

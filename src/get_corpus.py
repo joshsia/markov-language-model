@@ -10,7 +10,7 @@ get_corpus.py --url=<url> [--out_file=<out_file>] [--start=<start>]
 
 Options:
 --url=<url>             URL to download text from
---out_file=<out_file>   Filename to save corpus as [default: corpus]
+--out_file=<out_file>   Filename to save corpus as [default: corpus.txt]
 --start=<start>         Integer specifying where the text starts [default: 0]
 '''
 
@@ -30,7 +30,7 @@ def main(opt):
   corpus = urllib.request.urlopen(opt["--url"]).read().decode("utf-8")
   corpus = corpus[int(opt["--start"]):]
 
-  out_file = "data/" + opt["--out_file"] + ".txt"
+  out_file = "data/" + opt["--out_file"]
 
   with open(out_file, "w") as f:
     f.write(corpus)

@@ -10,4 +10,21 @@ A Markov model of an input text, known as a corpus, is learned and can be used t
 
 ### Usage
 
+To replicate the analysis, clone this GitHub repository, install the dependencies listed below, and run the following command at the command line/terminal from the root directory of this project:
+
+ ```
+ make all
+ ```
+
+To reset the project to a clean state, with no intermediate or results files, run the following command at the command line/terminal from the root directory of this project:
+
+ ```
+ make clean
+ ```
+
 ### Dependencies
+
+- Python version 3.9.5 and Python packages:
+    -   docopt=0.6.2
+    -   urllib3=1.26.6
+    -   numpy=1.21.2

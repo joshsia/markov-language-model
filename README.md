@@ -26,5 +26,4 @@ To reset the project to a clean state, with no intermediate or results files, ru
 
 - Python version 3.9.5 and Python packages:
     -   docopt=0.6.2
-    -   urllib3=1.26.6
     -   numpy=1.21.2

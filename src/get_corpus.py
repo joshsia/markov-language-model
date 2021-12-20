@@ -17,7 +17,7 @@ Options:
 # python src/get_corpus.py --url=http://www.gutenberg.org/files/2591/2591-0.txt --start=2820
 
 import sys
-import docopt
+from docopt import docopt
 import urllib.request
 
 opt = docopt(__doc__)

@@ -16,7 +16,7 @@ Options:
 # python src/fit_model.py --in_corpus=data/corpus.txt --n_gram=5
 
 import sys
-import docopt
+from docopt import docopt
 import numpy as np
 from collections import defaultdict, Counter
 import pickle
